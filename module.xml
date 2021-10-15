@@ -1,0 +1,218 @@
+<?xml version="1.0" ?>
+<module>
+
+<Login f="nodata">
+  <Author f="noscroll">
+    <Login t="dropdown" f="user" l="Admin"/>
+  </Author>
+</Login>
+
+<Admin f="nodata">
+  <Home f="noscroll">
+    <Create_New_Record l="Field_Entry"/>
+    <Field_Entries t="list" e="Field_Entry"/>
+  </Home>
+  <search/>
+  <Seed_ID>
+    <autonum/>
+  </Seed_ID>
+</Admin>
+
+<Field_Entry>
+  <fmt>BORE - {{Bore_ID}} - {{Catchment}}</fmt>
+  <Physiochemical>
+    <Bore_ID f="autonum"/>
+    <timestamp/>
+    <Catchment/>
+    <Monitoring_Equipment_Present t="radio">
+      <opts>
+        <opt>Y</opt>
+        <opt>N</opt>
+      </opts>
+    </Monitoring_Equipment_Present>
+    <Time_Removed b="time"/>
+    <Time_Replaced b="time"/>
+    <Min_Slot b="decimal"/>
+    <Max_Slot b="decimal"/>
+    <Depth_to_Water b="decimal"/>
+    <Casing_Height b="decimal"/>
+    <cols>
+      <col>
+        <Temp_30L b="decimal">
+          Temp (30L)
+        </Temp_30L>
+        <pH_30L b="decimal">
+          pH (30L)
+        </pH_30L>
+        <EC_uS_cm_30 b="decimal">
+          EC uS/cm (30)
+        </EC_uS_cm_30>
+        <DO_mg_L_30 b="decimal">
+          DO mg/L (30)
+        </DO_mg_L_30>
+        <ORP_30L b="decimal">
+          ORP (30L)
+        </ORP_30L>
+      </col>
+      <col>
+        <Temp_180L b="decimal">
+          Temp (180L)
+        </Temp_180L>
+        <pH_180L b="decimal">
+          pH (180L)
+        </pH_180L>
+        <EC_uS_cm_180 b="decimal">
+          EC uS/cm (180)
+        </EC_uS_cm_180>
+        <DO_mg_L_180 b="decimal">
+          DO mg/L (180)
+        </DO_mg_L_180>
+        <ORP_180L b="decimal">
+          ORP (180L)
+        </ORP_180L>
+      </col>
+    </cols>
+  </Physiochemical>
+  <Stygofaunal>
+    <Number_of_Jars_30L b="integer"/>
+    <Sed_Volume_Remaining_30 b="decimal">
+      Sed Volume Remaining (30)
+    </Sed_Volume_Remaining_30>
+    <Number_of_Jars_180L b="integer"/>
+    <Sed_Volume_Remaining_180 b="decimal">
+      Sed Volume Remaining (180)
+    </Sed_Volume_Remaining_180>
+    <Ethanol_Used b="decimal">
+      Ethanol % Used
+    </Ethanol_Used>
+    <Notes/>
+  </Stygofaunal>
+  <Water_Quality>
+    <Nutrients_50ml_Collected t="radio">
+      <opts>
+        <opt>Y</opt>
+        <opt>N</opt>
+      </opts>
+    </Nutrients_50ml_Collected>
+    <Metals_Filtered t="radio">
+      <opts>
+        <opt>Y</opt>
+        <opt>N</opt>
+      </opts>
+    </Metals_Filtered>
+    <Water_Qual_Collected t="radio">
+      <opts>
+        <opt>Y</opt>
+        <opt>N</opt>
+      </opts>
+    </Water_Qual_Collected>
+    <Pesticide_Dipstick t="radio">
+      Pesticide (Dipstick)
+      <opts>
+        <opt>Positive</opt>
+        <opt>Negative</opt>
+      </opts>
+    </Pesticide_Dipstick>
+    <Microbial_Sample t="radio">
+      <opts>
+        <opt>Y</opt>
+        <opt>N</opt>
+      </opts>
+    </Microbial_Sample>
+    <Storage t="dropdown">
+      <opts>
+        <opt>Fridge</opt>
+        <opt>Esky</opt>
+        <opt>Freezer</opt>
+        <opt>Other</opt>
+      </opts>
+    </Storage>
+    <Tube_Cleaned t="radio">
+      <opts>
+        <opt>Y</opt>
+        <opt>N</opt>
+      </opts>
+    </Tube_Cleaned>
+  </Water_Quality>
+  <Site_Characteristics>
+    <Trees_5m_Tall_in_250m_Radius b="integer">
+      #Trees >5m Tall in 250m Radius
+    </Trees_5m_Tall_in_250m_Radius>
+    <Dominant_Vegetation t="checkbox">
+      <opts>
+        <opt>Crops</opt>
+        <opt>Grass</opt>
+        <opt>Salt Bush</opt>
+        <opt>Shrub</opt>
+        <opt>Large Trees</opt>
+        <opt>Other</opt>
+      </opts>
+    </Dominant_Vegetation>
+    <Sediment_Type t="checkbox">
+      <opts>
+        <opt>Gravel</opt>
+        <opt>Coarse Sand</opt>
+        <opt>Medium Sand</opt>
+        <opt>Fine Sand</opt>
+        <opt>Clay</opt>
+      </opts>
+    </Sediment_Type>
+    <Sediment_Volume t="checkbox">
+      <opts>
+        <opt>Very High</opt>
+        <opt>High</opt>
+        <opt>Medium</opt>
+        <opt>Low</opt>
+        <opt>Very Low</opt>
+      </opts>
+    </Sediment_Volume>
+    <Land_Use_5_km t="checkbox">
+      <opts>
+        <opt>Mining</opt>
+        <opt>Cropping</opt>
+        <opt>Irrigated</opt>
+        <opt>Grazing</opt>
+        <opt>National Park</opt>
+        <opt>Other</opt>
+      </opts>
+    </Land_Use_5_km>
+    <Irrigated t="radio">
+      <opts>
+        <opt>Y</opt>
+        <opt>N</opt>
+      </opts>
+    </Irrigated>
+    <Type_Evidence_of_Irrigation>
+      Type/Evidence of Irrigation
+    </Type_Evidence_of_Irrigation>
+    <Recharge_Volume_Pumped_Before_Empty/>
+    <Recharge_Rate_m_sec b="decimal">
+      Recharge Rate #m/sec
+    </Recharge_Rate_m_sec>
+    <Notes/>
+  </Site_Characteristics>
+  <Microbial_Filtering_EOD>
+    <M_Collection_Date b="date">
+    </M_Collection_Date>
+    <M_Collection_Time b="time"/>
+    <Number_of_Membranes_Filtered b="integer">
+      Number of Membranes Filtered?
+    </Number_of_Membranes_Filtered>
+    <M1_Volume_Filtered_L b="decimal">
+      M1 Volume Filtered (L)
+    </M1_Volume_Filtered_L>
+    <M1_Sediment_Added t="radio">
+      <opts>
+        <opt>Y</opt>
+        <opt>N</opt>
+      </opts>
+    </M1_Sediment_Added>
+    <M2_Volume_Filtered_L b="decimal">
+      M2 Volume Filtered (L)
+    </M2_Volume_Filtered_L>
+    <M2_Sediment_Added t="radio"/>
+    <Time_Frozen b="time"/>
+  </Microbial_Filtering_EOD>
+</Field_Entry>
+
+</module>
