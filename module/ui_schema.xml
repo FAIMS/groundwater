@@ -78,7 +78,7 @@
               <Number_of_Jars_180L/>
               <Sed_Volume_Remaining_180/>
               <Ethanol_Used/>
-              <Notes/>
+              <Stygofaunal_Notes/>
             </Stygofaunal>
             <Water_Quality>
               <Nutrients_50ml_Collected/>
@@ -99,7 +99,7 @@
               <Type_Evidence_of_Irrigation/>
               <Recharge_Volume_Pumped_Before_Empty/>
               <Recharge_Rate_m_sec/>
-              <Notes/>
+              <Site_Characteristics_Notes/>
             </Site_Characteristics>
             <Microbial_Filtering_EOD>
               <M_Collection_Date/>
@@ -325,8 +325,8 @@
         <input faims_attribute_name="Ethanol Used" faims_attribute_type="measure" ref="Ethanol_Used">
           <label>{Ethanol_Used}</label>
         </input>
-        <input faims_attribute_name="Notes" faims_attribute_type="measure" ref="Notes">
-          <label>{Notes}</label>
+        <input faims_attribute_name="Stygofaunal Notes" faims_attribute_type="measure" ref="Stygofaunal_Notes">
+          <label>{Stygofaunal_Notes}</label>
         </input>
       </group>
       <group ref="Water_Quality">
@@ -430,8 +430,8 @@
         <input faims_attribute_name="Recharge Rate m sec" faims_attribute_type="measure" ref="Recharge_Rate_m_sec">
           <label>{Recharge_Rate_m_sec}</label>
         </input>
-        <input faims_attribute_name="Notes" faims_attribute_type="measure" ref="Notes">
-          <label>{Notes}</label>
+        <input faims_attribute_name="Site Characteristics Notes" faims_attribute_type="measure" ref="Site_Characteristics_Notes">
+          <label>{Site_Characteristics_Notes}</label>
         </input>
       </group>
       <group ref="Microbial_Filtering_EOD">

@@ -85,7 +85,7 @@
     <Ethanol_Used b="decimal">
       Ethanol % Used
     </Ethanol_Used>
-    <Notes/>
+    <Stygofaunal_Notes/>
   </Stygofaunal>
   <Water_Quality>
     <Nutrients_50ml_Collected t="radio">
@@ -189,7 +189,7 @@
     <Recharge_Rate_m_sec b="decimal">
       Recharge Rate #m/sec
     </Recharge_Rate_m_sec>
-    <Notes/>
+    <Site_Characteristics_Notes/>
   </Site_Characteristics>
   <Microbial_Filtering_EOD>
     <M_Collection_Date b="date">
@@ -210,7 +210,12 @@
     <M2_Volume_Filtered_L b="decimal">
       M2 Volume Filtered (L)
     </M2_Volume_Filtered_L>
-    <M2_Sediment_Added t="radio"/>
+    <M2_Sediment_Added t="radio">
+      <opts>
+        <opt>Y</opt>
+        <opt>N</opt>
+      </opts>
+    </M2_Sediment_Added>
     <Time_Frozen b="time"/>
   </Microbial_Filtering_EOD>
 </Field_Entry>
