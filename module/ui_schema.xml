@@ -174,7 +174,7 @@
       <label>{Login}</label>
       <group ref="Author" faims_scrollable="false">
         <label>{Author}</label>
-        <select1 ref="Login">
+        <select1 appearance="compact" ref="Login">
           <label>{Login}</label>
           <item>
             <label>Options not loaded</label>

@@ -3,7 +3,7 @@
 
 <Login f="nodata">
   <Author f="noscroll">
-    <Login t="dropdown" f="user" l="Admin"/>
+    <Login t="list" f="user" l="Admin"/>
   </Author>
 </Login>
 

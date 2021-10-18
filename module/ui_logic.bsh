@@ -317,7 +317,7 @@ HashMap REF_TO_FLAG_STRING                = new HashMap();
 NODATA_TAB_GROUPS.add("Login");
 NODATA_TAB_GROUPS.add("Admin");
 
-REF_TO_TYPE.put("Login/Author/Login", "dropdown");
+REF_TO_TYPE.put("Login/Author/Login", "list");
 REF_TO_TYPE.put("Admin/Home/Create_New_Record", "button");
 REF_TO_TYPE.put("Admin/Home/Field_Entries", "list");
 REF_TO_TYPE.put("Admin/Search/Search_Term", "input");
@@ -3161,7 +3161,7 @@ void populateListForUsers(){
 }
 
 String getUserMenuValue(int i) {
-  String selectedUser = getFieldValue(USER_MENU_PATH);
+  String selectedUser = getListItemValue();
   if (selectedUser == null)
     return "";
 
