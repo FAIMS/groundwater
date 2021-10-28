@@ -39,4 +39,5 @@ users:
 # will be used instead.
 #
 
-project_module: {}
+project_module:
+  name: "Groundwater 2021-10-28"

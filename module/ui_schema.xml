@@ -45,9 +45,38 @@
           </Admin>
           <Field_Entry>
             <Physiochemical>
-              <Bore_ID/>
-              <Field_Entry_timestamp/>
-              <Catchment/>
+              <Colgroup_1>
+                <Col_1>
+                  <Bore_ID/>
+                </Col_1>
+                <Col_2>
+                  <Catchment/>
+                </Col_2>
+              </Colgroup_1>
+              <Site_Code/>
+              <Date/>
+              <Time/>
+              <Colgroup_2>
+                <Col_1>
+                  <Latitude/>
+                </Col_1>
+                <Col_2>
+                  <Longitude/>
+                </Col_2>
+              </Colgroup_2>
+              <Colgroup_3>
+                <Col_1>
+                  <Northing/>
+                </Col_1>
+                <Col_2>
+                  <Easting/>
+                </Col_2>
+                <Col_3>
+                  <Accuracy/>
+                </Col_3>
+              </Colgroup_3>
+              <Take_From_GPS_1/>
+              <Elevation_m/>
               <Monitoring_Equipment_Present/>
               <Time_Removed/>
               <Time_Replaced/>
@@ -55,7 +84,7 @@
               <Max_Slot/>
               <Depth_to_Water/>
               <Casing_Height/>
-              <Colgroup_1>
+              <Colgroup_4>
                 <Col_1>
                   <Temp_30L/>
                   <pH_30L/>
@@ -70,7 +99,9 @@
                   <DO_mg_L_180/>
                   <ORP_180L/>
                 </Col_2>
-              </Colgroup_1>
+              </Colgroup_4>
+              <Camera/>
+              <Camera_Button_1/>
             </Physiochemical>
             <Stygofaunal>
               <Number_of_Jars_30L/>
@@ -109,28 +140,33 @@
               <M1_Sediment_Added/>
               <M2_Volume_Filtered_L/>
               <M2_Sediment_Added/>
+              <M3_Volume_Filtered_L/>
+              <M3_Sediment_Added/>
               <Time_Frozen/>
             </Microbial_Filtering_EOD>
           </Field_Entry>
         </faims>
       </instance>
       <bind nodeset="/faims/Admin/Seed_ID/Next_Bore_ID" type="decimal"/>
+      <bind nodeset="/faims/Field_Entry/Physiochemical/Date" type="date"/>
+      <bind nodeset="/faims/Field_Entry/Physiochemical/Time" type="time"/>
+      <bind nodeset="/faims/Field_Entry/Physiochemical/Elevation_m" type="decimal"/>
       <bind nodeset="/faims/Field_Entry/Physiochemical/Time_Removed" type="time"/>
       <bind nodeset="/faims/Field_Entry/Physiochemical/Time_Replaced" type="time"/>
       <bind nodeset="/faims/Field_Entry/Physiochemical/Min_Slot" type="decimal"/>
       <bind nodeset="/faims/Field_Entry/Physiochemical/Max_Slot" type="decimal"/>
       <bind nodeset="/faims/Field_Entry/Physiochemical/Depth_to_Water" type="decimal"/>
       <bind nodeset="/faims/Field_Entry/Physiochemical/Casing_Height" type="decimal"/>
-      <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_1/Col_1/Temp_30L" type="decimal"/>
-      <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_1/Col_1/pH_30L" type="decimal"/>
-      <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_1/Col_1/EC_uS_cm_30" type="decimal"/>
-      <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_1/Col_1/DO_mg_L_30" type="decimal"/>
-      <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_1/Col_1/ORP_30L" type="decimal"/>
-      <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_1/Col_2/Temp_180L" type="decimal"/>
-      <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_1/Col_2/pH_180L" type="decimal"/>
-      <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_1/Col_2/EC_uS_cm_180" type="decimal"/>
-      <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_1/Col_2/DO_mg_L_180" type="decimal"/>
-      <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_1/Col_2/ORP_180L" type="decimal"/>
+      <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_4/Col_1/Temp_30L" type="decimal"/>
+      <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_4/Col_1/pH_30L" type="decimal"/>
+      <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_4/Col_1/EC_uS_cm_30" type="decimal"/>
+      <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_4/Col_1/DO_mg_L_30" type="decimal"/>
+      <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_4/Col_1/ORP_30L" type="decimal"/>
+      <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_4/Col_2/Temp_180L" type="decimal"/>
+      <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_4/Col_2/pH_180L" type="decimal"/>
+      <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_4/Col_2/EC_uS_cm_180" type="decimal"/>
+      <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_4/Col_2/DO_mg_L_180" type="decimal"/>
+      <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_4/Col_2/ORP_180L" type="decimal"/>
       <bind nodeset="/faims/Field_Entry/Stygofaunal/Number_of_Jars_30L" type="integer"/>
       <bind nodeset="/faims/Field_Entry/Stygofaunal/Sed_Volume_Remaining_30" type="decimal"/>
       <bind nodeset="/faims/Field_Entry/Stygofaunal/Number_of_Jars_180L" type="integer"/>
@@ -143,6 +179,7 @@
       <bind nodeset="/faims/Field_Entry/Microbial_Filtering_EOD/Number_of_Membranes_Filtered" type="integer"/>
       <bind nodeset="/faims/Field_Entry/Microbial_Filtering_EOD/M1_Volume_Filtered_L" type="decimal"/>
       <bind nodeset="/faims/Field_Entry/Microbial_Filtering_EOD/M2_Volume_Filtered_L" type="decimal"/>
+      <bind nodeset="/faims/Field_Entry/Microbial_Filtering_EOD/M3_Volume_Filtered_L" type="decimal"/>
       <bind nodeset="/faims/Field_Entry/Microbial_Filtering_EOD/Time_Frozen" type="time"/>
     </model>
   </h:head>
@@ -234,14 +271,71 @@
       <label>{Field_Entry}</label>
       <group ref="Physiochemical">
         <label>{Physiochemical}</label>
-        <input faims_attribute_name="Bore ID" faims_attribute_type="measure" ref="Bore_ID">
-          <label>{Bore_ID}</label>
+        <group ref="Colgroup_1" faims_style="orientation">
+          <label/>
+          <group ref="Col_1" faims_style="even">
+            <label/>
+            <input faims_attribute_name="Bore ID" faims_attribute_type="measure" ref="Bore_ID">
+              <label>{Bore_ID}</label>
+            </input>
+          </group>
+          <group ref="Col_2" faims_style="even">
+            <label/>
+            <input faims_attribute_name="Catchment" faims_attribute_type="measure" ref="Catchment">
+              <label>{Catchment}</label>
+            </input>
+          </group>
+        </group>
+        <input faims_attribute_name="Site Code" faims_attribute_type="measure" ref="Site_Code">
+          <label>{Site_Code}</label>
         </input>
-        <input faims_attribute_name="Field Entry timestamp" faims_attribute_type="measure" ref="Field_Entry_timestamp" faims_read_only="true">
-          <label>{Field_Entry_timestamp}</label>
+        <input faims_attribute_name="Date" faims_attribute_type="measure" ref="Date">
+          <label>{Date}</label>
         </input>
-        <input faims_attribute_name="Catchment" faims_attribute_type="measure" ref="Catchment">
-          <label>{Catchment}</label>
+        <input faims_attribute_name="Time" faims_attribute_type="measure" ref="Time">
+          <label>{Time}</label>
+        </input>
+        <group ref="Colgroup_2" faims_style="orientation">
+          <label/>
+          <group ref="Col_1" faims_style="even">
+            <label/>
+            <input faims_attribute_name="Latitude" faims_attribute_type="measure" ref="Latitude" faims_read_only="true">
+              <label>{Latitude}</label>
+            </input>
+          </group>
+          <group ref="Col_2" faims_style="even">
+            <label/>
+            <input faims_attribute_name="Longitude" faims_attribute_type="measure" ref="Longitude" faims_read_only="true">
+              <label>{Longitude}</label>
+            </input>
+          </group>
+        </group>
+        <group ref="Colgroup_3" faims_style="orientation">
+          <label/>
+          <group ref="Col_1" faims_style="even">
+            <label/>
+            <input faims_attribute_name="Northing" faims_attribute_type="measure" ref="Northing" faims_read_only="true">
+              <label>{Northing}</label>
+            </input>
+          </group>
+          <group ref="Col_2" faims_style="even">
+            <label/>
+            <input faims_attribute_name="Easting" faims_attribute_type="measure" ref="Easting" faims_read_only="true">
+              <label>{Easting}</label>
+            </input>
+          </group>
+          <group ref="Col_3" faims_style="even">
+            <label/>
+            <input faims_attribute_name="Accuracy" faims_attribute_type="measure" ref="Accuracy" faims_read_only="true">
+              <label>{Accuracy}</label>
+            </input>
+          </group>
+        </group>
+        <trigger ref="Take_From_GPS_1">
+          <label>{Take_From_GPS_1}</label>
+        </trigger>
+        <input faims_attribute_name="Elevation m" faims_attribute_type="measure" ref="Elevation_m">
+          <label>{Elevation_m}</label>
         </input>
         <select1 appearance="full" faims_attribute_name="Monitoring Equipment Present" faims_attribute_type="vocab" ref="Monitoring_Equipment_Present">
           <label>{Monitoring_Equipment_Present}</label>
@@ -268,7 +362,7 @@
         <input faims_attribute_name="Casing Height" faims_attribute_type="measure" ref="Casing_Height">
           <label>{Casing_Height}</label>
         </input>
-        <group ref="Colgroup_1" faims_style="orientation">
+        <group ref="Colgroup_4" faims_style="orientation">
           <label/>
           <group ref="Col_1" faims_style="even">
             <label/>
@@ -307,6 +401,16 @@
             </input>
           </group>
         </group>
+        <select faims_sync="true" type="camera" faims_attribute_name="Camera" faims_attribute_type="measure" ref="Camera">
+          <label>{Camera}</label>
+          <item>
+            <label>Options not loaded</label>
+            <value>Options not loaded</value>
+          </item>
+        </select>
+        <trigger ref="Camera_Button_1">
+          <label>{Camera_Button_1}</label>
+        </trigger>
       </group>
       <group ref="Stygofaunal">
         <label>{Stygofaunal}</label>
@@ -460,6 +564,16 @@
         </input>
         <select1 appearance="full" faims_attribute_name="M2 Sediment Added" faims_attribute_type="vocab" ref="M2_Sediment_Added">
           <label>{M2_Sediment_Added}</label>
+          <item>
+            <label>Options not loaded</label>
+            <value>Options not loaded</value>
+          </item>
+        </select1>
+        <input faims_attribute_name="M3 Volume Filtered L" faims_attribute_type="measure" ref="M3_Volume_Filtered_L">
+          <label>{M3_Volume_Filtered_L}</label>
+        </input>
+        <select1 appearance="full" faims_attribute_name="M3 Sediment Added" faims_attribute_type="vocab" ref="M3_Sediment_Added">
+          <label>{M3_Sediment_Added}</label>
           <item>
             <label>Options not loaded</label>
             <value>Options not loaded</value>

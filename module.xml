@@ -21,9 +21,17 @@
 <Field_Entry>
   <fmt>BORE - {{Bore_ID}} - {{Catchment}}</fmt>
   <Physiochemical>
-    <Bore_ID f="autonum"/>
-    <timestamp/>
-    <Catchment/>
+    <cols>
+      <Bore_ID f="autonum"/>
+      <Catchment/>
+    </cols>
+    <Site_Code/>
+    <Date b="date"/>
+    <Time b="time"/>
+    <gps/>
+    <Elevation_m b="decimal">
+      Elevation (m)
+    </Elevation_m>
     <Monitoring_Equipment_Present t="radio">
       <opts>
         <opt>Y</opt>
@@ -72,6 +80,7 @@
         </ORP_180L>
       </col>
     </cols>
+    <Camera t="camera"/>
   </Physiochemical>
   <Stygofaunal>
     <Number_of_Jars_30L b="integer"/>
@@ -192,8 +201,7 @@
     <Site_Characteristics_Notes/>
   </Site_Characteristics>
   <Microbial_Filtering_EOD>
-    <M_Collection_Date b="date">
-    </M_Collection_Date>
+    <M_Collection_Date b="date"/>
     <M_Collection_Time b="time"/>
     <Number_of_Membranes_Filtered b="integer">
       Number of Membranes Filtered?
@@ -216,6 +224,15 @@
         <opt>N</opt>
       </opts>
     </M2_Sediment_Added>
+    <M3_Volume_Filtered_L b="decimal">
+      M3 Volume Filtered (L)
+    </M3_Volume_Filtered_L>
+    <M3_Sediment_Added t="radio">
+      <opts>
+        <opt>Y</opt>
+        <opt>N</opt>
+      </opts>
+    </M3_Sediment_Added>
     <Time_Frozen b="time"/>
   </Microbial_Filtering_EOD>
 </Field_Entry>
