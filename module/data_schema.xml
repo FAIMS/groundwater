@@ -68,6 +68,11 @@
 <description> </description></term>
       </lookup>
     </property>
+    <property name="Depth to Water Post Pumping m" type="measure">
+      <description></description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
     <property name="Time Removed" type="measure">
       <description></description>
       <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
@@ -78,22 +83,22 @@
       <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
       <appendCharacterString> - </appendCharacterString>
     </property>
-    <property name="Min Slot" type="measure">
+    <property name="Min Slot m" type="measure">
       <description></description>
       <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
       <appendCharacterString> - </appendCharacterString>
     </property>
-    <property name="Max Slot" type="measure">
+    <property name="Max Slot m" type="measure">
       <description></description>
       <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
       <appendCharacterString> - </appendCharacterString>
     </property>
-    <property name="Depth to Water" type="measure">
+    <property name="Depth to Water m" type="measure">
       <description></description>
       <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
       <appendCharacterString> - </appendCharacterString>
     </property>
-    <property name="Casing Height" type="measure">
+    <property name="Casing Height m" type="measure">
       <description></description>
       <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
       <appendCharacterString> - </appendCharacterString>
@@ -108,12 +113,12 @@
       <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
       <appendCharacterString> - </appendCharacterString>
     </property>
-    <property name="EC uS cm 30" type="measure">
+    <property name="EC uS cm 30L" type="measure">
       <description></description>
       <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
       <appendCharacterString> - </appendCharacterString>
     </property>
-    <property name="DO mg L 30" type="measure">
+    <property name="DO mg L 30L" type="measure">
       <description></description>
       <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
       <appendCharacterString> - </appendCharacterString>
@@ -133,12 +138,12 @@
       <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
       <appendCharacterString> - </appendCharacterString>
     </property>
-    <property name="EC uS cm 180" type="measure">
+    <property name="EC uS cm 180L" type="measure">
       <description></description>
       <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
       <appendCharacterString> - </appendCharacterString>
     </property>
-    <property name="DO mg L 180" type="measure">
+    <property name="DO mg L 180L" type="measure">
       <description></description>
       <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
       <appendCharacterString> - </appendCharacterString>
@@ -158,7 +163,7 @@
       <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
       <appendCharacterString> - </appendCharacterString>
     </property>
-    <property name="Sed Volume Remaining 30" type="measure">
+    <property name="Sed Volume Remaining 30L" type="measure">
       <description></description>
       <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
       <appendCharacterString> - </appendCharacterString>
@@ -168,7 +173,7 @@
       <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
       <appendCharacterString> - </appendCharacterString>
     </property>
-    <property name="Sed Volume Remaining 180" type="measure">
+    <property name="Sed Volume Remaining 180L" type="measure">
       <description></description>
       <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
       <appendCharacterString> - </appendCharacterString>
@@ -372,17 +377,12 @@
       <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
       <appendCharacterString> - </appendCharacterString>
     </property>
-    <property name="M Collection Date" type="measure">
-      <description></description>
-      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
-      <appendCharacterString> - </appendCharacterString>
-    </property>
-    <property name="M Collection Time" type="measure">
-      <description></description>
-      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
-      <appendCharacterString> - </appendCharacterString>
-    </property>
     <property name="Number of Membranes Filtered" type="measure">
+      <description></description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="M1 Time Filtering Started" type="measure">
       <description></description>
       <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
       <appendCharacterString> - </appendCharacterString>
@@ -403,6 +403,16 @@
 <description> </description></term>
       </lookup>
     </property>
+    <property name="M1 Time Frozen" type="measure">
+      <description></description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="M2 Time Filtering Started" type="measure">
+      <description></description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
     <property name="M2 Volume Filtered L" type="measure">
       <description></description>
       <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
@@ -418,6 +428,16 @@
         <term>{N}
 <description> </description></term>
       </lookup>
+    </property>
+    <property name="M2 Time Frozen" type="measure">
+      <description></description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="M3 Time Filtering Started" type="measure">
+      <description></description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
     </property>
     <property name="M3 Volume Filtered L" type="measure">
       <description></description>
@@ -435,7 +455,7 @@
 <description> </description></term>
       </lookup>
     </property>
-    <property name="Time Frozen" type="measure">
+    <property name="M3 Time Frozen" type="measure">
       <description></description>
       <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
       <appendCharacterString> - </appendCharacterString>

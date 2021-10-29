@@ -38,12 +38,23 @@
         <opt>N</opt>
       </opts>
     </Monitoring_Equipment_Present>
+    <Depth_to_Water_Post_Pumping_m b="decimal">
+      Depth to Water Post Pumping (m)
+    </Depth_to_Water_Post_Pumping_m>
     <Time_Removed b="time"/>
     <Time_Replaced b="time"/>
-    <Min_Slot b="decimal"/>
-    <Max_Slot b="decimal"/>
-    <Depth_to_Water b="decimal"/>
-    <Casing_Height b="decimal"/>
+    <Min_Slot_m b="decimal">
+      Min Slot (m)
+    </Min_Slot_m>
+    <Max_Slot_m b="decimal">
+      Max Slot (m)
+    </Max_Slot_m>
+    <Depth_to_Water_m b="decimal">
+      Depth to Water (m)
+    </Depth_to_Water_m>
+    <Casing_Height_m b="decimal">
+      Casing Height (m)
+    </Casing_Height_m>
     <cols>
       <col>
         <Temp_30L b="decimal">
@@ -52,12 +63,12 @@
         <pH_30L b="decimal">
           pH (30L)
         </pH_30L>
-        <EC_uS_cm_30 b="decimal">
-          EC uS/cm (30)
-        </EC_uS_cm_30>
-        <DO_mg_L_30 b="decimal">
-          DO mg/L (30)
-        </DO_mg_L_30>
+        <EC_uS_cm_30L b="decimal">
+          EC uS/cm (30L)
+        </EC_uS_cm_30L>
+        <DO_mg_L_30L b="decimal">
+          DO mg/L (30L)
+        </DO_mg_L_30L>
         <ORP_30L b="decimal">
           ORP (30L)
         </ORP_30L>
@@ -69,12 +80,12 @@
         <pH_180L b="decimal">
           pH (180L)
         </pH_180L>
-        <EC_uS_cm_180 b="decimal">
-          EC uS/cm (180)
-        </EC_uS_cm_180>
-        <DO_mg_L_180 b="decimal">
-          DO mg/L (180)
-        </DO_mg_L_180>
+        <EC_uS_cm_180L b="decimal">
+          EC uS/cm (180L)
+        </EC_uS_cm_180L>
+        <DO_mg_L_180L b="decimal">
+          DO mg/L (180L)
+        </DO_mg_L_180L>
         <ORP_180L b="decimal">
           ORP (180L)
         </ORP_180L>
@@ -84,13 +95,13 @@
   </Physiochemical>
   <Stygofaunal>
     <Number_of_Jars_30L b="integer"/>
-    <Sed_Volume_Remaining_30 b="decimal">
-      Sed Volume Remaining (30)
-    </Sed_Volume_Remaining_30>
+    <Sed_Volume_Remaining_30L b="decimal">
+      Sed Volume Remaining (30L)
+    </Sed_Volume_Remaining_30L>
     <Number_of_Jars_180L b="integer"/>
-    <Sed_Volume_Remaining_180 b="decimal">
-      Sed Volume Remaining (180)
-    </Sed_Volume_Remaining_180>
+    <Sed_Volume_Remaining_180L b="decimal">
+      Sed Volume Remaining (180L)
+    </Sed_Volume_Remaining_180L>
     <Ethanol_Used b="decimal">
       Ethanol % Used
     </Ethanol_Used>
@@ -201,11 +212,11 @@
     <Site_Characteristics_Notes/>
   </Site_Characteristics>
   <Microbial_Filtering_EOD>
-    <M_Collection_Date b="date"/>
-    <M_Collection_Time b="time"/>
     <Number_of_Membranes_Filtered b="integer">
       Number of Membranes Filtered?
     </Number_of_Membranes_Filtered>
+
+    <M1_Time_Filtering_Started b="time"/>
     <M1_Volume_Filtered_L b="decimal">
       M1 Volume Filtered (L)
     </M1_Volume_Filtered_L>
@@ -215,6 +226,9 @@
         <opt>N</opt>
       </opts>
     </M1_Sediment_Added>
+    <M1_Time_Frozen b="time"/>
+
+    <M2_Time_Filtering_Started b="time"/>
     <M2_Volume_Filtered_L b="decimal">
       M2 Volume Filtered (L)
     </M2_Volume_Filtered_L>
@@ -224,6 +238,9 @@
         <opt>N</opt>
       </opts>
     </M2_Sediment_Added>
+    <M2_Time_Frozen b="time"/>
+
+    <M3_Time_Filtering_Started b="time"/>
     <M3_Volume_Filtered_L b="decimal">
       M3 Volume Filtered (L)
     </M3_Volume_Filtered_L>
@@ -233,7 +250,7 @@
         <opt>N</opt>
       </opts>
     </M3_Sediment_Added>
-    <Time_Frozen b="time"/>
+    <M3_Time_Frozen b="time"/>
   </Microbial_Filtering_EOD>
 </Field_Entry>
 

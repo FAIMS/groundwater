@@ -78,25 +78,26 @@
               <Take_From_GPS_1/>
               <Elevation_m/>
               <Monitoring_Equipment_Present/>
+              <Depth_to_Water_Post_Pumping_m/>
               <Time_Removed/>
               <Time_Replaced/>
-              <Min_Slot/>
-              <Max_Slot/>
-              <Depth_to_Water/>
-              <Casing_Height/>
+              <Min_Slot_m/>
+              <Max_Slot_m/>
+              <Depth_to_Water_m/>
+              <Casing_Height_m/>
               <Colgroup_4>
                 <Col_1>
                   <Temp_30L/>
                   <pH_30L/>
-                  <EC_uS_cm_30/>
-                  <DO_mg_L_30/>
+                  <EC_uS_cm_30L/>
+                  <DO_mg_L_30L/>
                   <ORP_30L/>
                 </Col_1>
                 <Col_2>
                   <Temp_180L/>
                   <pH_180L/>
-                  <EC_uS_cm_180/>
-                  <DO_mg_L_180/>
+                  <EC_uS_cm_180L/>
+                  <DO_mg_L_180L/>
                   <ORP_180L/>
                 </Col_2>
               </Colgroup_4>
@@ -105,9 +106,9 @@
             </Physiochemical>
             <Stygofaunal>
               <Number_of_Jars_30L/>
-              <Sed_Volume_Remaining_30/>
+              <Sed_Volume_Remaining_30L/>
               <Number_of_Jars_180L/>
-              <Sed_Volume_Remaining_180/>
+              <Sed_Volume_Remaining_180L/>
               <Ethanol_Used/>
               <Stygofaunal_Notes/>
             </Stygofaunal>
@@ -133,16 +134,19 @@
               <Site_Characteristics_Notes/>
             </Site_Characteristics>
             <Microbial_Filtering_EOD>
-              <M_Collection_Date/>
-              <M_Collection_Time/>
               <Number_of_Membranes_Filtered/>
+              <M1_Time_Filtering_Started/>
               <M1_Volume_Filtered_L/>
               <M1_Sediment_Added/>
+              <M1_Time_Frozen/>
+              <M2_Time_Filtering_Started/>
               <M2_Volume_Filtered_L/>
               <M2_Sediment_Added/>
+              <M2_Time_Frozen/>
+              <M3_Time_Filtering_Started/>
               <M3_Volume_Filtered_L/>
               <M3_Sediment_Added/>
-              <Time_Frozen/>
+              <M3_Time_Frozen/>
             </Microbial_Filtering_EOD>
           </Field_Entry>
         </faims>
@@ -151,36 +155,40 @@
       <bind nodeset="/faims/Field_Entry/Physiochemical/Date" type="date"/>
       <bind nodeset="/faims/Field_Entry/Physiochemical/Time" type="time"/>
       <bind nodeset="/faims/Field_Entry/Physiochemical/Elevation_m" type="decimal"/>
+      <bind nodeset="/faims/Field_Entry/Physiochemical/Depth_to_Water_Post_Pumping_m" type="decimal"/>
       <bind nodeset="/faims/Field_Entry/Physiochemical/Time_Removed" type="time"/>
       <bind nodeset="/faims/Field_Entry/Physiochemical/Time_Replaced" type="time"/>
-      <bind nodeset="/faims/Field_Entry/Physiochemical/Min_Slot" type="decimal"/>
-      <bind nodeset="/faims/Field_Entry/Physiochemical/Max_Slot" type="decimal"/>
-      <bind nodeset="/faims/Field_Entry/Physiochemical/Depth_to_Water" type="decimal"/>
-      <bind nodeset="/faims/Field_Entry/Physiochemical/Casing_Height" type="decimal"/>
+      <bind nodeset="/faims/Field_Entry/Physiochemical/Min_Slot_m" type="decimal"/>
+      <bind nodeset="/faims/Field_Entry/Physiochemical/Max_Slot_m" type="decimal"/>
+      <bind nodeset="/faims/Field_Entry/Physiochemical/Depth_to_Water_m" type="decimal"/>
+      <bind nodeset="/faims/Field_Entry/Physiochemical/Casing_Height_m" type="decimal"/>
       <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_4/Col_1/Temp_30L" type="decimal"/>
       <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_4/Col_1/pH_30L" type="decimal"/>
-      <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_4/Col_1/EC_uS_cm_30" type="decimal"/>
-      <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_4/Col_1/DO_mg_L_30" type="decimal"/>
+      <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_4/Col_1/EC_uS_cm_30L" type="decimal"/>
+      <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_4/Col_1/DO_mg_L_30L" type="decimal"/>
       <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_4/Col_1/ORP_30L" type="decimal"/>
       <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_4/Col_2/Temp_180L" type="decimal"/>
       <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_4/Col_2/pH_180L" type="decimal"/>
-      <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_4/Col_2/EC_uS_cm_180" type="decimal"/>
-      <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_4/Col_2/DO_mg_L_180" type="decimal"/>
+      <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_4/Col_2/EC_uS_cm_180L" type="decimal"/>
+      <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_4/Col_2/DO_mg_L_180L" type="decimal"/>
       <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_4/Col_2/ORP_180L" type="decimal"/>
       <bind nodeset="/faims/Field_Entry/Stygofaunal/Number_of_Jars_30L" type="integer"/>
-      <bind nodeset="/faims/Field_Entry/Stygofaunal/Sed_Volume_Remaining_30" type="decimal"/>
+      <bind nodeset="/faims/Field_Entry/Stygofaunal/Sed_Volume_Remaining_30L" type="decimal"/>
       <bind nodeset="/faims/Field_Entry/Stygofaunal/Number_of_Jars_180L" type="integer"/>
-      <bind nodeset="/faims/Field_Entry/Stygofaunal/Sed_Volume_Remaining_180" type="decimal"/>
+      <bind nodeset="/faims/Field_Entry/Stygofaunal/Sed_Volume_Remaining_180L" type="decimal"/>
       <bind nodeset="/faims/Field_Entry/Stygofaunal/Ethanol_Used" type="decimal"/>
       <bind nodeset="/faims/Field_Entry/Site_Characteristics/Trees_5m_Tall_in_250m_Radius" type="integer"/>
       <bind nodeset="/faims/Field_Entry/Site_Characteristics/Recharge_Rate_m_sec" type="decimal"/>
-      <bind nodeset="/faims/Field_Entry/Microbial_Filtering_EOD/M_Collection_Date" type="date"/>
-      <bind nodeset="/faims/Field_Entry/Microbial_Filtering_EOD/M_Collection_Time" type="time"/>
       <bind nodeset="/faims/Field_Entry/Microbial_Filtering_EOD/Number_of_Membranes_Filtered" type="integer"/>
+      <bind nodeset="/faims/Field_Entry/Microbial_Filtering_EOD/M1_Time_Filtering_Started" type="time"/>
       <bind nodeset="/faims/Field_Entry/Microbial_Filtering_EOD/M1_Volume_Filtered_L" type="decimal"/>
+      <bind nodeset="/faims/Field_Entry/Microbial_Filtering_EOD/M1_Time_Frozen" type="time"/>
+      <bind nodeset="/faims/Field_Entry/Microbial_Filtering_EOD/M2_Time_Filtering_Started" type="time"/>
       <bind nodeset="/faims/Field_Entry/Microbial_Filtering_EOD/M2_Volume_Filtered_L" type="decimal"/>
+      <bind nodeset="/faims/Field_Entry/Microbial_Filtering_EOD/M2_Time_Frozen" type="time"/>
+      <bind nodeset="/faims/Field_Entry/Microbial_Filtering_EOD/M3_Time_Filtering_Started" type="time"/>
       <bind nodeset="/faims/Field_Entry/Microbial_Filtering_EOD/M3_Volume_Filtered_L" type="decimal"/>
-      <bind nodeset="/faims/Field_Entry/Microbial_Filtering_EOD/Time_Frozen" type="time"/>
+      <bind nodeset="/faims/Field_Entry/Microbial_Filtering_EOD/M3_Time_Frozen" type="time"/>
     </model>
   </h:head>
   <h:body>
@@ -344,23 +352,26 @@
             <value>Options not loaded</value>
           </item>
         </select1>
+        <input faims_attribute_name="Depth to Water Post Pumping m" faims_attribute_type="measure" ref="Depth_to_Water_Post_Pumping_m">
+          <label>{Depth_to_Water_Post_Pumping_m}</label>
+        </input>
         <input faims_attribute_name="Time Removed" faims_attribute_type="measure" ref="Time_Removed">
           <label>{Time_Removed}</label>
         </input>
         <input faims_attribute_name="Time Replaced" faims_attribute_type="measure" ref="Time_Replaced">
           <label>{Time_Replaced}</label>
         </input>
-        <input faims_attribute_name="Min Slot" faims_attribute_type="measure" ref="Min_Slot">
-          <label>{Min_Slot}</label>
+        <input faims_attribute_name="Min Slot m" faims_attribute_type="measure" ref="Min_Slot_m">
+          <label>{Min_Slot_m}</label>
         </input>
-        <input faims_attribute_name="Max Slot" faims_attribute_type="measure" ref="Max_Slot">
-          <label>{Max_Slot}</label>
+        <input faims_attribute_name="Max Slot m" faims_attribute_type="measure" ref="Max_Slot_m">
+          <label>{Max_Slot_m}</label>
         </input>
-        <input faims_attribute_name="Depth to Water" faims_attribute_type="measure" ref="Depth_to_Water">
-          <label>{Depth_to_Water}</label>
+        <input faims_attribute_name="Depth to Water m" faims_attribute_type="measure" ref="Depth_to_Water_m">
+          <label>{Depth_to_Water_m}</label>
         </input>
-        <input faims_attribute_name="Casing Height" faims_attribute_type="measure" ref="Casing_Height">
-          <label>{Casing_Height}</label>
+        <input faims_attribute_name="Casing Height m" faims_attribute_type="measure" ref="Casing_Height_m">
+          <label>{Casing_Height_m}</label>
         </input>
         <group ref="Colgroup_4" faims_style="orientation">
           <label/>
@@ -372,11 +383,11 @@
             <input faims_attribute_name="pH 30L" faims_attribute_type="measure" ref="pH_30L">
               <label>{pH_30L}</label>
             </input>
-            <input faims_attribute_name="EC uS cm 30" faims_attribute_type="measure" ref="EC_uS_cm_30">
-              <label>{EC_uS_cm_30}</label>
+            <input faims_attribute_name="EC uS cm 30L" faims_attribute_type="measure" ref="EC_uS_cm_30L">
+              <label>{EC_uS_cm_30L}</label>
             </input>
-            <input faims_attribute_name="DO mg L 30" faims_attribute_type="measure" ref="DO_mg_L_30">
-              <label>{DO_mg_L_30}</label>
+            <input faims_attribute_name="DO mg L 30L" faims_attribute_type="measure" ref="DO_mg_L_30L">
+              <label>{DO_mg_L_30L}</label>
             </input>
             <input faims_attribute_name="ORP 30L" faims_attribute_type="measure" ref="ORP_30L">
               <label>{ORP_30L}</label>
@@ -390,11 +401,11 @@
             <input faims_attribute_name="pH 180L" faims_attribute_type="measure" ref="pH_180L">
               <label>{pH_180L}</label>
             </input>
-            <input faims_attribute_name="EC uS cm 180" faims_attribute_type="measure" ref="EC_uS_cm_180">
-              <label>{EC_uS_cm_180}</label>
+            <input faims_attribute_name="EC uS cm 180L" faims_attribute_type="measure" ref="EC_uS_cm_180L">
+              <label>{EC_uS_cm_180L}</label>
             </input>
-            <input faims_attribute_name="DO mg L 180" faims_attribute_type="measure" ref="DO_mg_L_180">
-              <label>{DO_mg_L_180}</label>
+            <input faims_attribute_name="DO mg L 180L" faims_attribute_type="measure" ref="DO_mg_L_180L">
+              <label>{DO_mg_L_180L}</label>
             </input>
             <input faims_attribute_name="ORP 180L" faims_attribute_type="measure" ref="ORP_180L">
               <label>{ORP_180L}</label>
@@ -417,14 +428,14 @@
         <input faims_attribute_name="Number of Jars 30L" faims_attribute_type="measure" ref="Number_of_Jars_30L">
           <label>{Number_of_Jars_30L}</label>
         </input>
-        <input faims_attribute_name="Sed Volume Remaining 30" faims_attribute_type="measure" ref="Sed_Volume_Remaining_30">
-          <label>{Sed_Volume_Remaining_30}</label>
+        <input faims_attribute_name="Sed Volume Remaining 30L" faims_attribute_type="measure" ref="Sed_Volume_Remaining_30L">
+          <label>{Sed_Volume_Remaining_30L}</label>
         </input>
         <input faims_attribute_name="Number of Jars 180L" faims_attribute_type="measure" ref="Number_of_Jars_180L">
           <label>{Number_of_Jars_180L}</label>
         </input>
-        <input faims_attribute_name="Sed Volume Remaining 180" faims_attribute_type="measure" ref="Sed_Volume_Remaining_180">
-          <label>{Sed_Volume_Remaining_180}</label>
+        <input faims_attribute_name="Sed Volume Remaining 180L" faims_attribute_type="measure" ref="Sed_Volume_Remaining_180L">
+          <label>{Sed_Volume_Remaining_180L}</label>
         </input>
         <input faims_attribute_name="Ethanol Used" faims_attribute_type="measure" ref="Ethanol_Used">
           <label>{Ethanol_Used}</label>
@@ -540,14 +551,11 @@
       </group>
       <group ref="Microbial_Filtering_EOD">
         <label>{Microbial_Filtering_EOD}</label>
-        <input faims_attribute_name="M Collection Date" faims_attribute_type="measure" ref="M_Collection_Date">
-          <label>{M_Collection_Date}</label>
-        </input>
-        <input faims_attribute_name="M Collection Time" faims_attribute_type="measure" ref="M_Collection_Time">
-          <label>{M_Collection_Time}</label>
-        </input>
         <input faims_attribute_name="Number of Membranes Filtered" faims_attribute_type="measure" ref="Number_of_Membranes_Filtered">
           <label>{Number_of_Membranes_Filtered}</label>
+        </input>
+        <input faims_attribute_name="M1 Time Filtering Started" faims_attribute_type="measure" ref="M1_Time_Filtering_Started">
+          <label>{M1_Time_Filtering_Started}</label>
         </input>
         <input faims_attribute_name="M1 Volume Filtered L" faims_attribute_type="measure" ref="M1_Volume_Filtered_L">
           <label>{M1_Volume_Filtered_L}</label>
@@ -559,6 +567,12 @@
             <value>Options not loaded</value>
           </item>
         </select1>
+        <input faims_attribute_name="M1 Time Frozen" faims_attribute_type="measure" ref="M1_Time_Frozen">
+          <label>{M1_Time_Frozen}</label>
+        </input>
+        <input faims_attribute_name="M2 Time Filtering Started" faims_attribute_type="measure" ref="M2_Time_Filtering_Started">
+          <label>{M2_Time_Filtering_Started}</label>
+        </input>
         <input faims_attribute_name="M2 Volume Filtered L" faims_attribute_type="measure" ref="M2_Volume_Filtered_L">
           <label>{M2_Volume_Filtered_L}</label>
         </input>
@@ -569,6 +583,12 @@
             <value>Options not loaded</value>
           </item>
         </select1>
+        <input faims_attribute_name="M2 Time Frozen" faims_attribute_type="measure" ref="M2_Time_Frozen">
+          <label>{M2_Time_Frozen}</label>
+        </input>
+        <input faims_attribute_name="M3 Time Filtering Started" faims_attribute_type="measure" ref="M3_Time_Filtering_Started">
+          <label>{M3_Time_Filtering_Started}</label>
+        </input>
         <input faims_attribute_name="M3 Volume Filtered L" faims_attribute_type="measure" ref="M3_Volume_Filtered_L">
           <label>{M3_Volume_Filtered_L}</label>
         </input>
@@ -579,8 +599,8 @@
             <value>Options not loaded</value>
           </item>
         </select1>
-        <input faims_attribute_name="Time Frozen" faims_attribute_type="measure" ref="Time_Frozen">
-          <label>{Time_Frozen}</label>
+        <input faims_attribute_name="M3 Time Frozen" faims_attribute_type="measure" ref="M3_Time_Frozen">
+          <label>{M3_Time_Frozen}</label>
         </input>
       </group>
     </group>
