@@ -106,9 +106,9 @@
             </Physiochemical>
             <Stygofaunal>
               <Number_of_Jars_30L/>
-              <Sed_Volume_Remaining_30L/>
+              <Sed_Volume_Remaining_30L_L/>
               <Number_of_Jars_180L/>
-              <Sed_Volume_Remaining_180L/>
+              <Sed_Volume_Remaining_180L_L/>
               <Ethanol_Used/>
               <Stygofaunal_Notes/>
             </Stygofaunal>
@@ -173,9 +173,9 @@
       <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_4/Col_2/DO_mg_L_180L" type="decimal"/>
       <bind nodeset="/faims/Field_Entry/Physiochemical/Colgroup_4/Col_2/ORP_180L" type="decimal"/>
       <bind nodeset="/faims/Field_Entry/Stygofaunal/Number_of_Jars_30L" type="integer"/>
-      <bind nodeset="/faims/Field_Entry/Stygofaunal/Sed_Volume_Remaining_30L" type="decimal"/>
+      <bind nodeset="/faims/Field_Entry/Stygofaunal/Sed_Volume_Remaining_30L_L" type="decimal"/>
       <bind nodeset="/faims/Field_Entry/Stygofaunal/Number_of_Jars_180L" type="integer"/>
-      <bind nodeset="/faims/Field_Entry/Stygofaunal/Sed_Volume_Remaining_180L" type="decimal"/>
+      <bind nodeset="/faims/Field_Entry/Stygofaunal/Sed_Volume_Remaining_180L_L" type="decimal"/>
       <bind nodeset="/faims/Field_Entry/Stygofaunal/Ethanol_Used" type="decimal"/>
       <bind nodeset="/faims/Field_Entry/Site_Characteristics/Trees_5m_Tall_in_250m_Radius" type="integer"/>
       <bind nodeset="/faims/Field_Entry/Site_Characteristics/Recharge_Rate_m_sec" type="decimal"/>
@@ -428,14 +428,14 @@
         <input faims_attribute_name="Number of Jars 30L" faims_attribute_type="measure" ref="Number_of_Jars_30L">
           <label>{Number_of_Jars_30L}</label>
         </input>
-        <input faims_attribute_name="Sed Volume Remaining 30L" faims_attribute_type="measure" ref="Sed_Volume_Remaining_30L">
-          <label>{Sed_Volume_Remaining_30L}</label>
+        <input faims_attribute_name="Sed Volume Remaining 30L L" faims_attribute_type="measure" ref="Sed_Volume_Remaining_30L_L">
+          <label>{Sed_Volume_Remaining_30L_L}</label>
         </input>
         <input faims_attribute_name="Number of Jars 180L" faims_attribute_type="measure" ref="Number_of_Jars_180L">
           <label>{Number_of_Jars_180L}</label>
         </input>
-        <input faims_attribute_name="Sed Volume Remaining 180L" faims_attribute_type="measure" ref="Sed_Volume_Remaining_180L">
-          <label>{Sed_Volume_Remaining_180L}</label>
+        <input faims_attribute_name="Sed Volume Remaining 180L L" faims_attribute_type="measure" ref="Sed_Volume_Remaining_180L_L">
+          <label>{Sed_Volume_Remaining_180L_L}</label>
         </input>
         <input faims_attribute_name="Ethanol Used" faims_attribute_type="measure" ref="Ethanol_Used">
           <label>{Ethanol_Used}</label>

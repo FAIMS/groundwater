@@ -95,13 +95,13 @@
   </Physiochemical>
   <Stygofaunal>
     <Number_of_Jars_30L b="integer"/>
-    <Sed_Volume_Remaining_30L b="decimal">
-      Sed Volume Remaining (30L)
-    </Sed_Volume_Remaining_30L>
+    <Sed_Volume_Remaining_30L_L b="decimal">
+      Sed Volume Remaining 30L (L)
+    </Sed_Volume_Remaining_30L_L>
     <Number_of_Jars_180L b="integer"/>
-    <Sed_Volume_Remaining_180L b="decimal">
-      Sed Volume Remaining (180L)
-    </Sed_Volume_Remaining_180L>
+    <Sed_Volume_Remaining_180L_L b="decimal">
+      Sed Volume Remaining 180L (L)
+    </Sed_Volume_Remaining_180L_L>
     <Ethanol_Used b="decimal">
       Ethanol % Used
     </Ethanol_Used>
