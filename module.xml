@@ -23,11 +23,14 @@
   <Physiochemical>
     <cols>
       <Bore_ID f="autonum"/>
-      <Catchment/>
+      <Site_Code/>
     </cols>
-    <Site_Code/>
-    <Date b="date"/>
-    <Time b="time"/>
+    <Catchment/>
+    <!-- <Date b="date"/>
+    <Time b="time"/> -->
+    <Start_Time r="readonly"/>
+    <Start_Time_Button t="button"/>
+    <!-- TODO BBS make button to reset timestamp -->
     <gps/>
     <Elevation_m b="decimal">
       Elevation (m)
@@ -38,11 +41,6 @@
         <opt>N</opt>
       </opts>
     </Monitoring_Equipment_Present>
-    <Depth_to_Water_Post_Pumping_m b="decimal">
-      Depth to Water Post Pumping (m)
-    </Depth_to_Water_Post_Pumping_m>
-    <Time_Removed b="time"/>
-    <Time_Replaced b="time"/>
     <Min_Slot_m b="decimal">
       Min Slot (m)
     </Min_Slot_m>
@@ -91,9 +89,23 @@
         </ORP_180L>
       </col>
     </cols>
+    <Last_Calibrated t="date"/>
     <Camera t="camera"/>
   </Physiochemical>
-  <Stygofaunal>
+  <Stygos>
+    <TwoL_Bailer t="radio">
+      2L Bailer
+      <opts>
+        <opt>Y</opt>
+        <opt>N</opt>
+      </opts>
+    </TwoL_Bailer>
+    <Number_of_Net_Hauls_63um b="integer">
+      Number of Net Hauls (63um)
+    </Number_of_Net_Holes_63um>
+    <Number_of_Net_Hauls_150um b="integer">
+      Number of Net Hauls (150um)
+    </Number_of_Net_Hauls_150um>
     <Number_of_Jars_30L b="integer"/>
     <Sed_Volume_Remaining_30L_L b="decimal">
       Sed Volume Remaining 30L (L)
@@ -105,27 +117,39 @@
     <Ethanol_Used b="decimal">
       Ethanol % Used
     </Ethanol_Used>
-    <Stygofaunal_Notes/>
-  </Stygofaunal>
+    <Stygos_Notes/>
+  </Stygos>
   <Water_Quality>
-    <Nutrients_50ml_Collected t="radio">
-      <opts>
-        <opt>Y</opt>
-        <opt>N</opt>
-      </opts>
-    </Nutrients_50ml_Collected>
-    <Metals_Filtered t="radio">
-      <opts>
-        <opt>Y</opt>
-        <opt>N</opt>
-      </opts>
-    </Metals_Filtered>
     <Water_Qual_Collected t="radio">
       <opts>
         <opt>Y</opt>
         <opt>N</opt>
       </opts>
     </Water_Qual_Collected>
+    <Metals_Filtered t="radio">
+      <opts>
+        <opt>Y</opt>
+        <opt>N</opt>
+      </opts>
+    </Metals_Filtered>
+    <Metals_Preserved t="radio">
+      <opts>
+        <opt>In field</opt>
+        <opt>EOD</opt>
+      </opts>
+    </Metals_Preserved>
+    <Alkalinity_Collected t="radio">
+      <opts>
+        <opt>Y</opt>
+        <opt>N</opt>
+      </opts>
+    </Alkalinity_Collected>
+    <Isotope_Collected t="radio">
+      <opts>
+        <opt>Y</opt>
+        <opt>N</opt>
+      </opts>
+    </Isotope_Collected>
     <Pesticide_Dipstick t="radio">
       Pesticide (Dipstick)
       <opts>
@@ -139,6 +163,12 @@
         <opt>N</opt>
       </opts>
     </Microbial_Sample>
+    <Preservitave_Added t="radio">
+      <opts>
+        <opt>Y</opt>
+        <opt>N</opt>
+      </opts>
+    </Preservitave_Added>
     <Storage t="dropdown">
       <opts>
         <opt>Fridge</opt>
@@ -154,7 +184,20 @@
       </opts>
     </Tube_Cleaned>
   </Water_Quality>
-  <Site_Characteristics>
+  <Logger>
+    <Logger_Number b="decimal"/>
+    <Logger_Data_Collected t="radio">
+      <opts>
+        <opt>Y</opt>
+        <opt>N</opt>
+      </opts>
+    </Logger_Data_Collected>
+    <Depth_to_Water_Post_Pumping_m b="decimal">
+      Depth to Water Post Pumping (m)
+    </Depth_to_Water_Post_Pumping_m>
+    <Time_Replaced b="time"/>
+  </Logger>
+  <Site_Chars>
     <Trees_5m_Tall_in_250m_Radius b="integer">
       #Trees >5m Tall in 250m Radius
     </Trees_5m_Tall_in_250m_Radius>
@@ -190,9 +233,10 @@
       <opts>
         <opt>Mining</opt>
         <opt>Cropping</opt>
-        <opt>Irrigated</opt>
+        <opt>Dryland Cropping</opt>
         <opt>Grazing</opt>
         <opt>National Park</opt>
+        <opt>Horticulture</opt>
         <opt>Other</opt>
       </opts>
     </Land_Use_5_km>
@@ -202,15 +246,42 @@
         <opt>N</opt>
       </opts>
     </Irrigated>
-    <Type_Evidence_of_Irrigation>
-      Type/Evidence of Irrigation
+    <Crop_Type/>
+    <Cropping_Practice t="checkbox">
+      <opts>
+        <opt>Single Skip</opt>
+        <opt>Double Skip</opt>
+        <opt>Double Crop</opt>
+        <opt>Other</opt>
+      </opts>
+    </Cropping_Practice>
+    <Type_Evidence_of_Irrigation t="checkbox">
+      <opts>
+        <opt>Furrow</opt>
+        <opt>Dam</opt>
+        <opt>Spray</opt>
+        <opt>Drip</opt>
+        <opt>Flood</opt>
+        <opt>Other</opt>
+      </opts>
     </Type_Evidence_of_Irrigation>
+    <Number_of_Dams b="integer"/>
+    <Distance_to_Dam_m b="integer">
+      Distance to Dam (m)
+    </Distance_to_Dam_m>
+    <Dam_Level_Pct b="integer">
+      Dam Level (%)
+    </Dam_Level_Pct>
     <Recharge_Volume_Pumped_Before_Empty/>
     <Recharge_Rate_m_sec b="decimal">
-      Recharge Rate #m/sec
+      Recharge Rate (m/sec)
     </Recharge_Rate_m_sec>
     <Site_Characteristics_Notes/>
-  </Site_Characteristics>
+  </Site_Chars>
+  <Veg>
+    <New_Tree t="button" lc="Tree"/>
+    <List_of_Related_Trees t="list" ec="Tree"/>
+  </Veg>
   <Microbial_Filtering_EOD>
     <Number_of_Membranes_Filtered b="integer">
       Number of Membranes Filtered?
@@ -253,5 +324,72 @@
     <M3_Time_Frozen b="time"/>
   </Microbial_Filtering_EOD>
 </Field_Entry>
-
+<Tree>
+  <fmt>{{Bore_ID}} Tree #{{Tree_ID}}</fmt>
+  <Bore_ID f="id" i="Field_Entry/Physiochemical/Bore_ID" />
+  <Tree_ID f="id" b="integer">
+  <Species>
+    <opts>
+      <opt>River Redgum</opt>
+      <opt>Coolabah</opt>
+      <opt>Yellow box</opt>
+    </opts>
+  </Species>
+  <Distance_from_bore_m b="decimal">
+    Distance from Bore (m)
+  </Distance_from_bore_m>
+  <Bearing_direction_from_bore_deg b="integer">
+    Bearing Direction from Bore (deg)
+  </Bearing_direction_from_bore_deg>
+  <DBH_cm b="decimal">
+    DBH (cm)
+  </DBH_cm>
+  <Height_m b="decimal">
+    Height (m)
+  </Height_m>
+  <Canopy_Extent_m2 b="decimal">
+    Canopy Extent (m^2)
+  </Canopy_Extent_m2>
+  <Canopy_Density_pct b="decimal">
+    Canopy Density (pct)
+  </Canopy_Density_pct>
+  <Dead_Canopy_pct b="decimal">
+    Dead Canopy (pct)
+  </Dead_Canopy_pct>
+  <Dead_Limbs_Count b="integer"/>
+  <Alive_Limbs_Count b="integer"/>
+  <Evidence_of_Flowering t="checkbox">
+      <opts>
+        <opt>Fruit</opt>
+        <opt>Flower</opt>
+        <opt>Bud</opt>
+      </opts>
+    </Evidence_of_Flowering>
+  <Tree_Isotope_Collected t="radio">
+      <opts>
+        <opt>Y</opt>
+        <opt>N</opt>
+      </opts>
+  </Tree_Isotope_Collected>
+  <Tree_Isotope_Number b="integer"/>
+  <Tree_Notes/>
+  <camera>
+</Tree>
+<logic><![CDATA[
+  /****************************** DATE POPULATION *******************************/
+  void setDayMonth() {
+    ref     = "Field_Entry/Physiochemical/Start_Time";
+    fmt     = "yyyy-MM-dd HH:mm";
+    date    = new Date();
+    dateFmt = new java.text.SimpleDateFormat(fmt);
+    dateStr = dateFmt.format(date);
+    if(dateStr.endsWith(".")){
+      dateStr = dateStr.substring(0, dateStr.length()-1);
+    }
+    setFieldValue(ref, dateStr);
+  }
+  addOnEvent("Field_Entry/Physiochemical/Start_Time_Button", "click", "setDayMonth()");
+  ]]>
+</logic>
 </module>
+
