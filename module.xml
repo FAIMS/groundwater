@@ -102,7 +102,7 @@
     </TwoL_Bailer>
     <Number_of_Net_Hauls_63um b="integer">
       Number of Net Hauls (63um)
-    </Number_of_Net_Holes_63um>
+    </Number_of_Net_Hauls_63um>
     <Number_of_Net_Hauls_150um b="integer">
       Number of Net Hauls (150um)
     </Number_of_Net_Hauls_150um>
@@ -278,7 +278,7 @@
     </Recharge_Rate_m_sec>
     <Site_Characteristics_Notes/>
   </Site_Chars>
-  <Veg>
+  <Veg f="noscroll">
     <New_Tree t="button" lc="Tree"/>
     <List_of_Related_Trees t="list" ec="Tree"/>
   </Veg>
@@ -326,8 +326,9 @@
 </Field_Entry>
 <Tree>
   <fmt>{{Bore_ID}} Tree #{{Tree_ID}}</fmt>
+  <Tree>
   <Bore_ID f="id" i="Field_Entry/Physiochemical/Bore_ID" />
-  <Tree_ID f="id" b="integer">
+  <Tree_ID f="id" b="integer"/>
   <Species>
     <opts>
       <opt>River Redgum</opt>
@@ -359,12 +360,12 @@
   <Dead_Limbs_Count b="integer"/>
   <Alive_Limbs_Count b="integer"/>
   <Evidence_of_Flowering t="checkbox">
-      <opts>
-        <opt>Fruit</opt>
-        <opt>Flower</opt>
-        <opt>Bud</opt>
-      </opts>
-    </Evidence_of_Flowering>
+    <opts>
+      <opt>Fruit</opt>
+      <opt>Flower</opt>
+      <opt>Bud</opt>
+    </opts>
+  </Evidence_of_Flowering>
   <Tree_Isotope_Collected t="radio">
       <opts>
         <opt>Y</opt>
@@ -373,7 +374,8 @@
   </Tree_Isotope_Collected>
   <Tree_Isotope_Number b="integer"/>
   <Tree_Notes/>
-  <camera>
+  <Tree_Photo t="camera"/>
+  </Tree>
 </Tree>
 <logic><![CDATA[
   /****************************** DATE POPULATION *******************************/
