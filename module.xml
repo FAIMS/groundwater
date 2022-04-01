@@ -329,13 +329,7 @@
   <Tree>
   <Bore_ID f="id" i="Field_Entry/Physiochemical/Bore_ID" />
   <Tree_ID f="id" b="integer"/>
-  <Species>
-    <opts>
-      <opt>River Redgum</opt>
-      <opt>Coolabah</opt>
-      <opt>Yellow box</opt>
-    </opts>
-  </Species>
+  <Species/>
   <Distance_from_bore_m b="decimal">
     Distance from Bore (m)
   </Distance_from_bore_m>

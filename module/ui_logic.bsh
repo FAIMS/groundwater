@@ -410,7 +410,7 @@ REF_TO_TYPE.put("Field_Entry/Microbial_Filtering_EOD/M3_Sediment_Added", "radio"
 REF_TO_TYPE.put("Field_Entry/Microbial_Filtering_EOD/M3_Time_Frozen", "input");
 REF_TO_TYPE.put("Tree/Tree/Bore_ID", "input");
 REF_TO_TYPE.put("Tree/Tree/Tree_ID", "input");
-REF_TO_TYPE.put("Tree/Tree/Species", "dropdown");
+REF_TO_TYPE.put("Tree/Tree/Species", "input");
 REF_TO_TYPE.put("Tree/Tree/Distance_from_bore_m", "input");
 REF_TO_TYPE.put("Tree/Tree/Bearing_direction_from_bore_deg", "input");
 REF_TO_TYPE.put("Tree/Tree/DBH_cm", "input");

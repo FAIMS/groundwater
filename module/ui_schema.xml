@@ -756,13 +756,9 @@
         <input faims_attribute_name="Tree ID" faims_attribute_type="measure" ref="Tree_ID">
           <label>{Tree_ID}</label>
         </input>
-        <select1 faims_attribute_name="Species" faims_attribute_type="vocab" ref="Species">
+        <input faims_attribute_name="Species" faims_attribute_type="measure" ref="Species">
           <label>{Species}</label>
-          <item>
-            <label>Options not loaded</label>
-            <value>Options not loaded</value>
-          </item>
-        </select1>
+        </input>
         <input faims_attribute_name="Distance from bore m" faims_attribute_type="measure" ref="Distance_from_bore_m">
           <label>{Distance_from_bore_m}</label>
         </input>
